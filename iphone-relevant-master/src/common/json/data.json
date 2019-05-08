@@ -1,0 +1,26 @@
+{ "page": [
+  {
+    "id": 1,
+    "name": "防止系统升级",
+    "url": "/upgrade"
+  },
+  {
+    "id": 2,
+    "name": "Cydia安装软件源",
+    "url": "/addSource"
+  },
+  {
+    "id": 3,
+    "name": "下载安装越狱软件",
+    "url": "/breakout"
+  }
+],
+  "source": [
+    {
+      "id": 1,
+      "name": "IOS云控",
+      "url": "cydia://url/https://cydia.saurik.com/api/share#?source=http://app-mtoton.test.upcdn.net/cydia/"
+    }
+  ],
+  "ios": ["IOS10", "IOS11", "IOS12"]
+}
