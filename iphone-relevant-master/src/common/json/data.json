@@ -22,5 +22,32 @@
       "url": "cydia://url/https://cydia.saurik.com/api/share#?source=http://app-mtoton.test.upcdn.net/cydia/"
     }
   ],
-  "ios": ["IOS10", "IOS11", "IOS12"]
+  "ios": ["IOS10", "IOS11", "IOS12"],
+  "breakout": [
+    {
+      "id": 1,
+      "name": "IOS-9-PanGu",
+      "url": "/breakout/pangu"
+    },
+    {
+      "id": 2,
+      "name": "IOS-10-YaLu",
+      "url": "/breakout/yalu"
+    },
+    {
+      "id": 3,
+      "name": "IOS-11-Electra",
+      "url": "/breakout/electra"
+    },
+    {
+      "id": 4,
+      "name": "IOS-12-Unc0ver",
+      "url": "/breakout/unc0ver"
+    },
+    {
+      "id": 5,
+      "name": "IOS-12-Chimera",
+      "url": "/breakout/chimera"
+    }
+  ]
 }

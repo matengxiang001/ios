@@ -1,42 +1,33 @@
 <template>
   <div>
     <x-header title="下载越狱软件"></x-header>
-    <el-tabs :stretch="true">
-      <el-tab-pane label="IOS 10">
-        <YaLu></YaLu>
-      </el-tab-pane>
-      <el-tab-pane label="IOS 11">
-        <Electra></Electra>
-      </el-tab-pane>
-      <el-tab-pane label="IOS 12">
-        <Unc0ver></Unc0ver>
-      </el-tab-pane>
-    </el-tabs>
+
+    <group v-for="item in breakoutData" :key="item.id">
+      <cell-box :link="item.url" is-link>
+        {{item.name}}
+      </cell-box>
+    </group>
+
   </div>
 </template>
 
 <script>
-  import { XButton, XHeader, Tab, TabItem } from 'vux'
-  import YaLu from './YaLu';
-  import Electra from './Electra';
-  import Unc0ver from './Unc0ver';
+  import { XHeader, Group, CellBox } from 'vux'
   import data from '../common/json/data.json';
   export default {
   name: 'breakout',
   components: {
-    XButton,
     XHeader,
-    Tab,
-    TabItem,
-    YaLu,
-    Electra,
-    Unc0ver
+    Group,
+    CellBox
   },
   data () {
     return {
+      breakoutData: []
     }
   },
   created() {
+    this.breakoutData = data.breakout
   },
   methods: {
   }
